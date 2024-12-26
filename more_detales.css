@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: color .3s ease;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+.request_form {
+    max-width: 650px;
+    width: 90%;
+    margin: 7% auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #B6191B;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.field label {
+    font-weight: bold;
+}
+
+span {
+    flex: 1;
+    color: #585656;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.button_agree,
+.button_disagree {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.button_agree {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button_agree:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+.button_disagree {
+    background-color: #f44336;
+    color: white;
+}
+
+.button_disagree:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li a {
+        font-size: 12px;
+    }
+
+    .request_form {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .field label {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    .button_agree,
+    .button_disagree {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .nav ul {
+        gap: 15px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .request_form {
+        width: 80%;
+        padding: 15px;
+        margin-top: 7%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .field label {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .button_agree,
+    .button_disagree {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .header {
+        padding: 10px 25px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .nav ul {
+        gap: 20px;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .request_form {
+        width: 70%;
+        padding: 20px;
+        margin-top: 5%;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .field label {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button_agree,
+    .button_disagree {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}

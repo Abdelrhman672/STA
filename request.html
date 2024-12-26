@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STA | Request</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="logo.png" alt="STA Logo" class="logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="#request_form">Request</a></li>
+                <li><a href="request_detales.html">Request Details</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Form -->
+    <form action="" id="request_form">
+        <!-- Select Academy -->
+        <div class="container">
+            <label for="Academy_select">Select Academy</label>
+            <select id="Academy_select" class="Academy_select">
+                <option value="STA1">STA1</option>
+                <option value="STA2">STA2</option>
+                <option value="STA3">STA3</option>
+            </select>
+        </div>
+
+        <!-- Enter Order Name -->
+        <div class="container">
+            <label for="order_input">Order Name</label>
+            <input id="order_input" class="order_input" type="text" required minlength="3" maxlength="40">
+        </div>
+
+        <!-- Quantity -->
+        <div class="container">
+            <label for="quntity_input">Quantity</label>
+            <input id="quntity_input" class="quntity_input" type="number" value="1" min="1">
+        </div>
+
+        <!-- Submit -->
+        <div class="container">
+            <button type="submit" class="submit_button">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

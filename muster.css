@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("Background.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.login {
+    width: 400px;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.heder h1 {
+    font-size: 1.5em;
+    color: #000;
+    margin: 20px 0;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+.username,
+.password {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #B6191B;
+}
+
+.username input {
+    background: url('icon_user.png') no-repeat 10px center;
+    background-size: 20px;
+}
+
+.password input {
+    background: url('icon_pass.png') no-repeat 10px center;
+    background-size: 20px;
+}
+
+::placeholder {
+    text-align: left;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button button {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #B6191B;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .login {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .heder h1 {
+        font-size: 1.2rem;
+    }
+
+    .input-container .username,
+    .input-container .password {
+        margin-bottom: 25px;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 12px 35px;
+    }
+
+    .button button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .login {
+        width: 60%;
+        padding: 25px;
+    }
+
+    .heder h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-container .username,
+    .input-container .password {
+        margin-bottom: 20px;
+    }
+
+    input {
+        font-size: 1.1rem;
+        padding: 14px 40px;
+    }
+
+    .button button {
+        width: 85%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .login {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .heder h1 {
+        font-size: 1.2em;
+    }
+
+    input {
+        padding: 10px 40px;
+        font-size: 0.9em;
+    }
+
+    .button button {
+        width: 70%;
+        font-size: 0.9em;
+    }
+}

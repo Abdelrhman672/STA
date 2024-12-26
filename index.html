@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STA | Login</title>
+    <link rel="stylesheet" href="muster.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="logo">
+            <img src="sta.png" alt="STA Logo">
+        </div>
+        <div class="heder">
+            <h1>Login to STA</h1>
+        </div>
+        <div class="input-container">
+            <div class="username">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="password">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+        </div>
+        <div class="button">
+            <button class="text" onclick="loginTest()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        function loginTest() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === "123" && password === "123") {
+                window.location.href = "request.html";
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+    </div>
+</body>
+
+</html>
